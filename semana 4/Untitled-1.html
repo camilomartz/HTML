@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA Y FORMULARIO</title>
+</head>
+<body style="background-color: blueviolet;">
+    <header>
+        <img src="img/incap.png" width="100" height="100" alt="incap">
+        <h1>LISTAS EN HTML</h1>
+        <h2>MENU DE NAVEGACION</h2>
+    </header>
+    <nav>
+<ul>
+    <li type="disc" style="color: rgb(139, 158, 28);">Home</li>
+    <li type="square">Productos</li>
+    <li type="circle">Servicios</li>
+<li>Contacto</li>
+
+
+</ul>
+    </nav>
+    <section>
+        <!-- Method GET pasa los datos por la url, atravez de parametros// Methopd post 
+            pasa los datos de forma interna(no se ven) -->
+
+     <form action="datos.php" method="post">
+         <!-- seccion de marco de formulario -->
+         <fieldset>
+         <!--seccion de ingreso de nombre  -->
+         <label > ingrese su nombre completo</label>
+         <input name="nombre" type="text" placeholder="Ingrese su nombre completo" required="">
+        <br><br>
+
+        <!-- seccion email -->
+        <label>E-mail:</label>
+        <input name="email" type="email" placeholder="ingrese su Email" required="">
+        <br><br>
+        
+        <!-- seccion hobbies -->
+
+    <label>selecciona tus hobbies
+    </label>
+    <br>
+    <input name="cine" type="checkbox">cine<br>
+    <input name="lectura" type="checkbox">lectura<br>
+    <input name="deporte" type="checkbox">deporte<br>
+    <br>
+    
+    <!-- estado civil -->
+
+
+    <label>Estado civil:</label><br>
+    <input name="estcivil" type="radio" value="casado">casado(a)<br>   
+    <input name="estcivil" type="radio" value="soltero">Soltero(a)<br>
+    <input name="estcivil" type="radio" value="viudo">Viudo(a)<br>
+    <br><br>
+
+    <!-- seleccionar opcion lista -->
+    <label>PROGRAMAS TECNICOS:</label>
+    <select name="select">
+    <option>selecione el programa...</option>    
+      <option>Sistemas</option>
+      <option>Diseño grafico</option>    
+      <option>Contabilidad</option>
+    </select>
+    <br>
+    <br>
+    <label>Tu comentario:</label><br>
+    <textarea name="mensaje" rows="5" cols="40"></textarea>
+</fieldset>
+<br><br>
+
+<!-- seccion de botones formulario submit : enviar daros cancel: borrar datos ingresados -->
+    
+<button type="submit">Enviar</button>
+<button type="reset">Cancelar</button>
+<br>
+<br>
+</form>
+</section>
+  <!-- seccion de pie de pagina -->
+<footer>
+    Derechos reservados &copy;2022&#64;NOMBRE  STD
+</footer> 
+
+
+</body>
+</html>
+<h1>TABLA DE DATOS</h1>
+<center>
+    <table>
+        <thead>
+            <tr>
+                <th>CODIGO</th>
+                <th>NOMBRE</th>
+                <th>APELLIDO</th>
+                <th>DOCIDEN</th>
+            </tr>
+        </thead> 
+        <tbody>
+            <tr>
+                <th>10</th>      
+                <th>Heladio</th>                       
+                <th>Polo</th>
+                <th>99997935</th>
+            </tr>
+            <tr>
+                <th>20</th>      
+                <th>Pepe</th>                       
+                <th>Toro</th>
+                <th>88886745</th>
+            </tr>
+            <tr>
+                <th>30</th>      
+                <th>Luis</th>                       
+                <th>Peña</th>
+                <th>44440934</th>
+            </tr>
+            
+            <tr>
+                <th>40</th>      
+                <th>Sofia</th>                       
+                <th>Ruiz</th>
+                <th>33332560</th>
+            </tr>
+        </tbody>
+    </table>   
+</center>
+    <style>
+    html {
+            text-align: center;
+            height: 100%;
+        }
+        table {
+            padding: 10px;
+        }
+        thead {
+            border: solid 6px rgb(255, 123, 0);
+            background-color: black;
+            color: aquamarine;
+        }
+        thead tr th {
+            padding: 15px;
+        }
+        tbody {
+            border: solid;
+            background-color: rgb(25, 68, 34);
+            color: black;
+        }
+    </style>  
+    </body>  
+      
